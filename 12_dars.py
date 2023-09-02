@@ -76,5 +76,36 @@ davlatlar = {
 for davlat,poytaht in sorted(davlatlar.items()):
 	print(f"{davlat.upper()}  {poytaht.title()}")
 
+# 3
+
+davlat_nomi = input("Istalgan davlatni kiriting: ")
+davlatlar_poytahti = {
+
+	'AQSH':'washington',
+	'tajikistan':'dushanbe',
+	'uzbekistan':'tashkent',
+	'rossiya':'moskva',
+	'Angliya':'london'
+}
+
+natija = davlatlar_poytahti.get(davlat_nomi, 'Bizda bunday davlat mavjud emas!')
+print(natija)
 	
-	
+# 4
+
+restoran_menu = {
+	'non': 5,
+	'choy':3,
+	'desert':15,
+	'burger':25,
+	'osh':20
+}
+savat = []
+for n in range(3):
+	savat.append(input(f'savatchaga {n+1} mahsulotlarni qoshing: '))
+
+for buyurtma in savat:
+	if buyurtma in restoran_menu:
+		print(f"{buyurtma} ning narhi {restoran_menu[buyurtma]} somon")
+	else:
+		print(f"bizda bunday {buyurtma} yoq")
