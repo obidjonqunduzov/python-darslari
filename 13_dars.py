@@ -158,8 +158,63 @@ for ismlar,malumotlar in buyuklar.items():
 		f"{malumotlar['ilmi']} bolib butun dunyoga tanilgan va quyidagi asarlarni yozgan: ",)
 
 	for kitoblari in malumotlar['asarlari']:
-		print(f"{kitoblari.title()}")
+		print(f" { kitoblari.title()}")
 		
 
+# 2
 
+print("Dostlarimning sevimli kinolari!")
+dostlarim = {
+	'javohir':['termenator','avatar','forsaj'],
+	'muhammadsharif':['josus','shum bola'],
+	'aziz':['robot','kosmos']
+}
+
+for dostlar,kinolar in dostlarim.items():
+	print(f"\n {dostlar.title()} quyidagi kinolarni sevib tomosha qiladi: ")
+	for sev_kinolar in kinolar:
+		print(f" {sev_kinolar.upper()}")
+
+# 3
+
+davlatlar = {
+	'uzbekistan':{
+		'aholisi':35438000,
+		'poytahti':'tashkent',
+		'masoxati':448978,
+		'pul birligi':'sum'
+	},
+	'tajikistan':{
+		'aholisi':8590000,
+		'poytahti':'dushanbe',
+		'masoxati':143941,
+		'pul birligi':'somon'
+	},
+	'russia':{
+		'aholisi':144575000,
+		'poytahti':'moskva',
+		'masoxati':17094832,
+		'pul birligi':'rubl'
+	}
+}
+
+dv_nomini_kiriting = input("Biror davlat nomini kiriting: ")
+
+if dv_nomini_kiriting in davlatlar:
+
+	info = davlatlar[dv_nomini_kiriting]
+
+	print(f"\n {dv_nomini_kiriting.title()} haqida qisqa malumot:")
+
+	for malumot_davlatlar,qiymatlari in info.items():
+		print(f" {malumot_davlatlar} : ",
+			f" {qiymatlari}")
+else:
+	print(f"{dv_nomini_kiriting} bizda bunday davlat haqida malumot yoq!")
+
+#for kalit_davlatlar, dv_info in davlatlar.items():
+#	print(f"\n {kalit_davlatlar.title()}  haqida qisqa malumotlar:")
+#	for malumot_davlatlar,qiymatlari in dv_info.items():
+#		print(f" {malumot_davlatlar} : ",
+#			f" {qiymatlari}")
 
