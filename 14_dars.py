@@ -57,8 +57,9 @@ print("Dastur tugadi")
 print("Salom")
 
 ism = input("Ismingizni kiriting: ")
-qiymatlar = ''
+
 while True:
+    qiymatlar = ism
 
     if qiymatlar == 'exit' or qiymatlar == 'boldi':
         break
@@ -79,5 +80,27 @@ while True:
         print(f"Hurmatli {ism.title()} sizga chipta bepul")
     else:
         print(f"Hurmatli {ism.title()} sizga chipta {narh} somon")
+
     print("Dastur toxtatish uchun 'exit' yoki 'boldi' yozing")
+    break
 print("Dastur tugadi")
+
+# 3
+
+
+savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+savol += "Musbat son kiriting "
+savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+
+
+while True:
+    qiymat = input(savol)
+    if qiymat=='exit':
+        break
+    elif float(qiymat)<0:
+        continue # agar foydalanuvchi manfiy son kiritsa tsiklni takrorlaymiz
+    else:
+        ildiz = float(qiymat)**(0.5)
+        print(f"{qiymat} ning ildizi {ildiz} ga teng")
+    
+        print(f"{qiymat} ning ildizi {ildiz} ga teng")
