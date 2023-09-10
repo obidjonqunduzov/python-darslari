@@ -78,3 +78,59 @@ for avto in avtolar:
 	else:
 		 narh = 'Nomalum'
 	print(f"{avto['rangi'].title()} {avto['model'].title()} {avto['karobka']} karobka, Narh: {narh}")
+
+
+# Uyga vazifa
+
+# 1
+
+def foydalanuvchi_info(ism,familiya,t_yili,t_joyi,email='',telefon=None,):
+
+ 	foydalanuvchi={
+ 	'ism':ism,
+ 	'familiya':familiya,
+ 	't_yili':t_yili,
+ 	't_joyi':t_joyi,
+ 	'emaoil':email,
+ 	'telefon':telefon,
+ 	}
+ 	return foydalanuvchi
+
+
+print("Uz malumotlaringizni kiriting")
+
+foydalanuvchilar = []
+
+while True:
+	
+	ism = input("Ismingiz: ")
+	familiya = input("Familiyangiz:")
+	t_yili = input("Tugilgan yilingiz: ")
+	t_joyi = input("Tugilgan joyingiz: ")
+	email =input("email pochtangiz: ")
+	telefon = input("Telefon raqamingiz: ")
+	foydalanuvchilar.append(foydalanuvchi_info(ism,familiya,t_yili,t_joyi,email,telefon))
+	javob = input("Yana malumot qoshasizmi? (ha/yoq): ")
+	if javob == 'yoq':
+		break
+	print("foydalanuvchilar: ")
+
+for foydalanuvchi in foydalanuvchilar:
+	print(
+		f"{foydalanuvchi['ism'].title()} {foydalanuvchi['familiya'].title()}",
+		f" {foydalanuvchi['t_yili']} tugilgan, telefoni : {foydalanuvchi['telefon']}"
+		)
+
+# 2
+
+def son(x,y,z):
+	print(f"Eng katta qiymat {x}{y}{z}")
+	max = x
+	if y>max:
+		max =y
+	if z>max:
+		max=z
+
+	return max
+
+
