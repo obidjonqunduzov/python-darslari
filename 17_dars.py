@@ -113,6 +113,7 @@ while True:
 	javob = input("Yana malumot qoshasizmi? (ha/yoq): ")
 	if javob == 'yoq':
 		break
+		
 	print("foydalanuvchilar: ")
 
 for foydalanuvchi in foydalanuvchilar:
