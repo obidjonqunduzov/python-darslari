@@ -50,7 +50,3 @@ def talabalar(ism,familiya,**boshqa_malumotlar):
 talaba_info=talabalar('Hasan','Mannonov',t_yili=1998,t_joyi='Tajikistan',kurs=4,fakultet='FizTex')
 print(talaba_info)
 
-# practika 1
-# ixtiyoriy raqamlarni hisoblovchi dastur tuzamiz!
-
-
