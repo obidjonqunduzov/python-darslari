@@ -1,3 +1,7 @@
+# Modullar bilan tanishamiz
+
+
+
 def avto_info(kompaniya, model, rangi, karobka, yili, narhi = None):
 	avto ={
 	'kompaniya':kompaniya,
@@ -38,7 +42,7 @@ def avto_kirit():
 def info_print(avto_info):
 	for avto in avtolar:
 		if avto['narh']:
-			 narh = avto['narh']
+			narh = avto['narh']
 		else:
 			narh = 'Nomalum'
 			print(f"{avto['rangi'].title()} {avto['model'].title()} {avto['karobka']} karobka, Narh: {narh}")

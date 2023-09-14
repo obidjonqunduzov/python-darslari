@@ -41,14 +41,9 @@ print(son)
 ismlar = ['olim','obid','hasan','husan']
 ism = ran.choice(ismlar) # ismlardan tasodifiy ism tanlaymiz
 print(ism)
-print(ran.choice(ism)) # ism ichidan tasodifiy harf tanlaymiz! 
+print(ran.choice(ism)) # ism ichidan tasodifiy harf tanlaymiz
 
-x = list(range(1,5,54))
-print(x)
-print(ran.choice(x))
-
-
-x = list(range(11,10))
-print(x)
-ran.shuffle(x)
-print(x)
+son = list(range(11))
+print(son)
+ran.shuffle(son)
+print(son)
