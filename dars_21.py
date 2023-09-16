@@ -51,3 +51,11 @@ print(juft_raqamlar)
 
 juft_raqamlar = list(filter(lambda x: x%2==0, raqamlar ))
 print(juft_raqamlar)
+
+mevalar = ['olma','urik','olcha','anor','banan','anjir']
+harf = 'a'
+mevalar_1 = list(filter(lambda meva: meva.startswith(harf),mevalar)) # startswith bu elemnt qaysi harf bilan boshlanshini aniqlaydi
+print(mevalar_1)
+
+mevalar_2 = list(filter(lambda meva: len(meva)<=4, mevalar)) # bu 4ta sozdan iborat mevalarni chiqaradi! 
+print(mevalar_2)
