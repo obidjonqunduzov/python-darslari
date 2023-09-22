@@ -134,4 +134,46 @@ def son(x,y,z):
 
 	return max
 
+# 3
+
+print("Qaysi turdagi avtomobil olmoqchisiz? ")
+
+def buy_car(cars):
+	cars = []
+
+	mers = {
+	'kompany':'Mersedes_benz',
+	'collor':'black',
+	'much':25000
+	},
+
+	opel = {
+	'kompany':'Opel',
+	'collor':'silver',
+	'much':15000
+	}
+
+	volvo = {
+	'kompany':'Volvo',
+	'collor':'red',
+	'much':25000
+	}
+
+
+
+	buy = input("Qaysi turdagi avtomobil olmoqchisiz? : ")
+	if buy == 'mers':
+		print(f"{mers}")
+	elif buy == 'opel':
+		print(f"{opel}")
+	elif buy == 'volvo':
+		print(f"{volvo}")
+	else:
+		("Uzur! Dokonimizda bunday avtomashina yoq")
+
+	
+
+
+
+
 
