@@ -139,40 +139,31 @@ def son(x,y,z):
 print("Qaysi turdagi avtomobil olmoqchisiz? ")
 
 def buy_car(cars):
-	cars = []
+	car = []
+	cars = {
 
-	mers = {
+	"mers" : {
 	'kompany':'Mersedes_benz',
 	'collor':'black',
 	'much':25000
 	},
 
-	opel = {
+	"opel" : {
 	'kompany':'Opel',
 	'collor':'silver',
 	'much':15000
-	}
+	},
 
-	volvo = {
+	"volvo" : {
 	'kompany':'Volvo',
 	'collor':'red',
 	'much':25000
 	}
 
-
-
-	buy = input("Qaysi turdagi avtomobil olmoqchisiz? : ")
-	if buy == 'mers':
-		print(f"{mers}")
-	elif buy == 'opel':
-		print(f"{opel}")
-	elif buy == 'volvo':
-		print(f"{volvo}")
-	else:
-		("Uzur! Dokonimizda bunday avtomashina yoq")
-
-	
-
+	}
+	return car
+natija = buy_car(car['mers'])
+print(natija)
 
 
 
