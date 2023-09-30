@@ -39,10 +39,10 @@ class Talaba:
 talaba1 = Talaba('olim','olimov',1997)
 talaba2 = Talaba('behzod','salimjonov',1998)
 talaba3 = Talaba('bakhodir','abdulhakimov',1998)
-talaba5 = Talaba('obidjon','Qunduzov',1998)
-talaba4 = Talaba('abduroziq','majidov',1998)
+talaba4 = Talaba('obidjon','Qunduzov',1998)
+talaba5 = Talaba('abduroziq','majidov',1998)
 
-print(talaba1.set_age())
+print(talaba2.get_info())
 
 # get (qoshish uchun) set (ozgartirish) uchun
 
@@ -55,20 +55,42 @@ class Fan():
 
 	def get_name(self):
 		"""Fan nomi"""
-		return self.name
+		return self.nomi
 
 	def add_students(self,talaba):
 		"""Fanga talabalarni qoshih"""
 		self.talabalar.append(talaba)
 		self.talabalar_soni += 1
+		
 
 	def get_students(self):
 		"""Fanga yozilgan talabalar soni"""
 		return [talaba.get_info() for talaba in self.talabalar]
 
+	def get_students_num(self):
+		"""Fanga yozilgan talabalar"""
+		return self.talabalar_soni
+
+	#def see_methods(klass):
+    	#return [method for method in dir(klass) if method.startswith('__') is False]
+
+
+
 
 fizika = Fan('Fizika va Texnika')
+
+talaba1 = Talaba('olim','olimov',1997)
+talaba2 = Talaba('behzod','salimjonov',1998)
+talaba3 = Talaba('bakhodir','abdulhakimov',1998)
+talaba4 = Talaba('obidjon','Qunduzov',1998)
+talaba5 = Talaba('abduroziq','majidov',1998)
+
 fizika.add_students(talaba1)
 fizika.add_students(talaba2)
 fizika.add_students(talaba3)
-print(fizika.talabalar_soni())
+fizika.add_students(talaba4)
+
+print(fizika.get_name())
+print(fizika.get_students())
+print(fizika.get_students_num())
+#print(fizika.see_methods(talaba1))
