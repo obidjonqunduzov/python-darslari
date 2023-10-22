@@ -72,9 +72,9 @@ class Fan():
 		return self.talabalar_soni
 
 	#def see_methods(klass):
-    	#return [method for method in dir(klass) if method.startswith('__') is False]
+  	  #	return [method for method in dir(klass) if method.startswith('__') is False]
 
-
+# print(see_methods(Talaba))
 
 
 fizika = Fan('Fizika va Texnika')
@@ -93,4 +93,4 @@ fizika.add_students(talaba4)
 print(fizika.get_name())
 print(fizika.get_students())
 print(fizika.get_students_num())
-#print(fizika.see_methods(talaba1))
+print(fizika.see_methods(Talaba)
