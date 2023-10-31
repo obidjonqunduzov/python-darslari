@@ -20,11 +20,12 @@ age = 21
 with open(name_fayl, 'w') as fayl_3:
     fayl_3.write(name +'\n')
     fayl_3.write(str(age)+'\n')
+    
 with open(name_fayl,'a') as fayl_3:
     fayl_3.write("Hasan Dusmetov \n")
     fayl_3.write('1998')
 
-import pickle
+
 
 import pickle
 

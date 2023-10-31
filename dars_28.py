@@ -91,6 +91,7 @@ facultet = students['student'][1]['faculty']
 
 print(f"ismi {name}, {kurs} kurs talabasi, {facultet} facultetida o'qiydi\n")
 name = students['student'][2]['name']
+
 kurs = students['student'][2]['year']
 facultet = students['student'][2]['faculty']
 
