@@ -1,4 +1,4 @@
-# Xatolar bilan ishlash 
+# Xatolar bilan ishlash funksiyalarni tikshirish
 # try harakat qilish
 # try asosan xato yuz berishi mumkin bo'lgan qismiga ishlatiladi
 # except aks holda,lekin degani
