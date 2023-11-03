@@ -39,7 +39,31 @@ class CarTest(unittest.TestCase):
 
 		# Yangi obyekt yaratamiz va unda narhini ham beramiz
 
-		avto_2 = Car("tayota","camry",2018,price = 55000)
-		self.assertEqual(55000,avto_2.price)
+		# avto_2 = Car("tayota","camry",2018,price = 55000)
+		# self.assertEqual(55000,avto_2.price)
+
+	def test_set_price(self): # narxini tekshiruvchi test
+		new_price = 55000
+		self.avto_2.set_price(new_price)
+		self.assertEqual(new_price, self.avto_2.price)
+
+	def test_add_km(self):
+		# Musbat qiymat berib ko'ramiz
+		self.avto_1.add_km(self.km)
+		self.assertEqual(self.km, self.avto_1.get_km())
+		
+		# Manfiy qiymat berib ko'ramiz
+
+		new_km = -4000
+		try:
+			self.avto_1.add_km(new_km)
+		except ValueError as error:
+			self.assertEqual(type(error), ValueError)
+		
+	
+
+     
+
+
 
 unittest.main()
