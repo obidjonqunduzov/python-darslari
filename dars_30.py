@@ -101,6 +101,7 @@ print(email)
 
 # Kuchli parolni tekshirish
 # Quyidagi andoza ham ihateregex.io sahifasidan olindi
+
 andoza = '^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$'
 msg = "Yangi parol kiriting"
 msg += '(kamida 8 belgidan iborat, kamida 1 ta lotin bosh harf, 1 ta kichik harf, '
